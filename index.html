@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio-kajitani</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <style>
+      .background-style {
+        width: 100%;
+        height: 100%;
+        text-align: center; /* 文字中央寄せ */
+        padding: 80px; /* 余白指定 */
+        background-image: url(./img/top-image.webp);
+        background-repeat: repeat; /* 画像を繰り返し表示しない */
+        background-size: 1600px 400px; /* 引き延ばした画像の方がきれい */
+        background-color: #7db2d5;
+      }
+      .icon-square {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 0.75rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <header class="p-3 text-bg-dark">
+        <div class="container">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          >
+            <ul
+              class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="nav-link px-2 text-secondary d-flex align-items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="white"
+                    class="bi bi-house-fill me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"
+                    />
+                    <path
+                      d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"
+                    />
+                  </svg>
+                  Home
+                </a>
+              </li>
+
+              <!-- <li><a href="#" class="nav-link px-2 text-white">履歴書</a></li> -->
+              <!-- <li>
+                <a href="#" class="nav-link px-2 text-white">職務経歴書</a>
+              </li>
+              <li><a href="#" class="nav-link px-2 text-white">成果物</a></li> -->
+              <!-- ランダムで成果物のリンクができたら面白そう--->
+              <!-- <li>
+                <a href="#" class="nav-link px-2 text-white"
+                  >おすすめ本ジェネレーター</a
+                >
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <section id="name">
+      <div
+        class="position-relative overflow-hidden text-center bg-body-tertiary"
+      >
+        <div id="head">
+          <div class="background-style">
+            <h1 class="display-3 fw-bold">portfolio</h1>
+            <h3 class="fw-normal text-muted mb-3">kajitani miyuki</h3>
+          </div>
+          <div class="d-flex gap-3 justify-content-center lead fw-normal"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gaiyo">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="./img/women-sakusei-202406.jpg"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              心理職からエンジニアへ
+            </h1>
+            <p class="lead" style="color: black">
+              臨床心理士・公認心理師を取得後、就労移行支援員、SNS相談員の経験を積みました。その後も心理職に就こうと考えていたものの、
+              コロナ禍で無料で公開されていたITに関する教材やサイトに触れる機会に恵まれ、心理学の論文や書籍を読む合間に始めたプログラミングに夢中になりました。長所診断サイトや、掲示板、SlackのbotでのTODO管理システムなどを作成しました。ご縁をいただき、医療業界向けのシステム開発会社に入社し、システムエンジニアとしてのキャリアをスタートさせました。
+            </p>
+            <p class="lead pb-2 border-bottom border-top">
+              主な使用技術：C#, Vue.js, SQLServer, Db2
+            </p>
+            <!--<p class="lead pb-2 border-bottom">資格：応用情報技術者試験(2024.7)</p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="iitokoro">
+      <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">貴社に貢献できること</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80%"
+                height="80%"
+                fill="currentColor"
+                class="bi bi-pc-display-horizontal"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">
+                実務経験を基盤にした業務への対応力
+              </h3>
+              <p>
+                医療機関向けのパッケージ開発において、アジャイル開発手法を活用し、設計からコーディング、リリース作業、保守まで幅広く担当して参りました。また、データ移行や調査・保守用のSQLの作成も行っております。これらの経験を通じて、業務全般に対する幅広い理解と対応力を培って参りました。
+                貴社で担当する業務について、これまでの経験を基盤として、より効果的に業務に貢献できると確信しております。
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80%"
+                height="80%"
+                fill="currentColor"
+                class="bi bi-wechat"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.176 14.429c-2.665 0-4.826-1.8-4.826-4.018 0-2.22 2.159-4.02 4.824-4.02S16 8.191 16 10.411c0 1.21-.65 2.301-1.666 3.036a.324.324 0 0 0-.12.366l.218.81a.616.616 0 0 1 .029.117.166.166 0 0 1-.162.162.177.177 0 0 1-.092-.03l-1.057-.61a.519.519 0 0 0-.256-.074.509.509 0 0 0-.142.021 5.668 5.668 0 0 1-1.576.22ZM9.064 9.542a.647.647 0 1 0 .557-1 .645.645 0 0 0-.646.647.615.615 0 0 0 .09.353Zm3.232.001a.646.646 0 1 0 .546-1 .645.645 0 0 0-.644.644.627.627 0 0 0 .098.356Z"
+                />
+                <path
+                  d="M0 6.826c0 1.455.781 2.765 2.001 3.656a.385.385 0 0 1 .143.439l-.161.6-.1.373a.499.499 0 0 0-.032.14.192.192 0 0 0 .193.193c.039 0 .077-.01.111-.029l1.268-.733a.622.622 0 0 1 .308-.088c.058 0 .116.009.171.025a6.83 6.83 0 0 0 1.625.26 4.45 4.45 0 0 1-.177-1.251c0-2.936 2.785-5.02 5.824-5.02.05 0 .1 0 .15.002C10.587 3.429 8.392 2 5.796 2 2.596 2 0 4.16 0 6.826Zm4.632-1.555a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0Zm3.875 0a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">
+                チームの心理的健康へのサポート
+              </h3>
+              <p>
+                公認心理士の資格を活かし、自己のメンタル管理に積極的に取り組むと同時に、チームメンバーの心理的なサポートを行います。健康な組織のためのメンタルヘルスの重要性を理解し、チーム全体が健康で生産的な状態を維持することで、プロジェクトの成果を最大化や、持続的な成功へのお力添えができると考えております。
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80%"
+                height="80%"
+                fill="currentColor"
+                class="bi bi-flag-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">
+                部署間のチームワークでの問題解決
+              </h3>
+              <p>
+                障害発生など問題を解決するときに、営業の部署の方や、サポート・保守部隊の方と協力をして取り組むことができます。
+                普段から部署の垣根を越えて、時には厚かましいほどコミュニケーションをとり、必要なときにご相談できるように、また、お声がけいただけるように関係性を築くことを意識しています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="container">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-body-secondary"
+              >© 2024 Kajitani Miyuki</span
+            >
+          </div>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>
