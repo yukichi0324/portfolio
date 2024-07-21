@@ -17,8 +17,8 @@
         text-align: center; /* 文字中央寄せ */
         padding: 80px; /* 余白指定 */
         background-image: url(./img/top-image.webp);
-        background-repeat: repeat; /* 画像を繰り返し表示しない */
-        background-size: 1600px 400px; /* 引き延ばした画像の方がきれい */
+        background-repeat: no-repeat; /* 画像を繰り返し表示しない */
+        background-size: 2000px 400px; /* 引き延ばした画像の方がきれい */
         background-color: #7db2d5;
       }
       .icon-square {
@@ -221,6 +221,60 @@
       <div class="album py-5 bg-body-tertiary">
         <div class="container">
           <h2 class="pb-2 border-bottom">成果物</h2>
+          <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-lg-12">
+                <img
+                  src="./img/project-timer.jpg"
+                  class="img-fluid w-100"
+                  alt="KintoneAPI連携 × 工数管理タイマー"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col-lg-12 text-center">
+                <h2 style="white-space: nowrap;">
+                  kintone API連携 × 工数管理タイマー = 作業効率∞
+                </h2>
+              </div>
+              <div class="col-lg-6 d-flex align-items-start" style="height: 194px; width: 420px;">
+                <div>
+                  <p class="lead">使用技術</p>
+                  <ul class="list-unstyled">
+                    <li>
+                      <strong>フロントエンド:</strong> React, Styled-components, react-circular-progressbar, react-toastify
+                    </li>
+                    <li>
+                      <strong>バックエンド:</strong> Node.js, Express.js, kintone REST API
+                    </li>
+                  </ul>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary btn-lg px-4"
+                      onclick="openInNewTab('https://project-timer-azay.onrender.com/')"
+                    >
+                      Appを新しいタブで開く
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex align-items-start" style="height: 194px; width: 420px;">
+                <div>
+                  <p class="lead">
+                    このアプリは、タイマーで作業時間を管理し、終了後はkintoneAPIを経由してkintoneで作成されたアプリにデータを登録します。
+                  </p>
+                  <ul>
+                    <li>タイマー機能 - 作業予定時間を設定</li>
+                    <li>API連携 - SE工数管理日報 にデータを登録</li>
+                    <li>通知機能 - react-toastify を使用したトースト通知</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <h2 class="pb-2 border-bottom"></h2>
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
               <div class="card shadow-sm">
@@ -283,9 +337,7 @@
                       </button>
                       <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                     </div>
-                    <small class="text-body-secondary"
-                      >grid
-                    </small>
+                    <small class="text-body-secondary">grid </small>
                   </div>
                 </div>
               </div>
@@ -317,8 +369,7 @@
                       </button>
                       <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                     </div>
-                    <small class="text-body-secondary">javascript
-                    </small>
+                    <small class="text-body-secondary">javascript </small>
                   </div>
                 </div>
               </div>
